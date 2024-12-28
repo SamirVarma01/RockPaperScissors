@@ -18,9 +18,9 @@ val_test_transforms = transforms.Compose([
 ])
 
 #Loads datasets
-train_data = datasets.ImageFolder('/Applications/VSCode/MLProjs/rps/dataset/train', transform=train_transforms)
-val_data = datasets.ImageFolder('/Applications/VSCode/MLProjs/rps/dataset/val', transform=val_test_transforms)
-test_data = datasets.ImageFolder('/Applications/VSCode/MLProjs/rps/dataset/test', transform=val_test_transforms)
+train_data = datasets.ImageFolder('/dataset/train', transform=train_transforms)
+val_data = datasets.ImageFolder('/dataset/val', transform=val_test_transforms)
+test_data = datasets.ImageFolder('/dataset/test', transform=val_test_transforms)
 
 train_loader = DataLoader(train_data, batch_size=32, shuffle=True)
 val_loader = DataLoader(val_data, batch_size=32, shuffle=False)
