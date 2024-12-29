@@ -8,12 +8,12 @@ device = torch.device("mps" if torch.backends.mps.is_available() else "cpu")
 
 # Load the model
 model = RockPaperScissorsCNN()
-model.load_state_dict(torch.load('rock_paper_scissors_model.pth', map_location=device, weights_only=True))
+model.load_state_dict(torch.load('/Applications/VSCode/MLProjs/rps/model/rock_paper_scissors_model.pth', map_location=device, weights_only=True))
 model.to(device)
 model.eval()
 
 # Define class labels
-class_labels = ['rock', 'paper', 'scissors']
+class_labels = ['paper', 'rock', 'scissors']
 
 # Define the preprocessing transformations
 transform = transforms.Compose([
@@ -40,5 +40,5 @@ def predict_image(image_path):
 
 if __name__ == "__main__":
     # Replace with the path to your test image
-    test_image_path = "test_image.png"
+    test_image_path = "/Applications/VSCode/MLProjs/rps/scripts/testing/test_image.png"
     predict_image(test_image_path)
