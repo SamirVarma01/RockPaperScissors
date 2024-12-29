@@ -17,7 +17,7 @@ The application detects gestures through a webcam, classifies them, and draws a 
 - Interactive Feedback: Bounding boxes and labels are drawn on the webcam feed for real-time feedback.
 
 ## Future Enhancements
-- Improved Hand Detection: Use advanced hand segmentation or detection methods for better accuracy.
+- Improved Hand Detection: Use advanced hand segmentation or detection methods for better accuracy. In particular, there is some issues in detection for scissors, so this could be improved with a better dataset.
 
 - Multiplayer Game: Extend the application to support multiplayer rock-paper-scissors games using webcams.
 
