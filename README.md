@@ -5,6 +5,11 @@ This project uses a Convolutional Neural Network (CNN) to classify hand gestures
 
 The application detects gestures through a webcam, classifies them, and draws a bounding box around the detected hand.
 
+## Usage
+
+To use the app, first clone the repository. I could not get some elements to load in other files without using their absolute path, so in some cases you may see the pathname on my computer. Please rephrase these to fit your directory. Afterwards, start a terminal in the directory and use python app.py. Once this is done, you can visit the locally hosted game at http://127.0.0.1:5000/. 
+
+NOTE: Scissors is a little difficult to detect for the model. The best way I have found is using your left hand to point two finger straight upwards, as if pointing a finger gun in the air.
 ---
 
 ## Features
